@@ -2,12 +2,12 @@
 
 Group Name: Power Rangers 
 
-Section: __Fill your class section__. 
+Section: Section 1 
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+1. Aida Wajihah Binti Zulkufle and 2214434
+2. Nur Sofiatunnisa' Binti Mohd Zaki and 2212008
+3. Aiman Aqimie Bin Hafiza and 2211711
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -24,7 +24,7 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** **aedajihah/OSProject**
 2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
 
 
