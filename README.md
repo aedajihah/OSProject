@@ -353,7 +353,7 @@ docker pull debian
 docker run --detach -it debian
 ```
 
-Terminal command: 
+Command: 
 <img width="531" alt="Screenshot 2024-01-30 215917" src="https://github.com/aedajihah/OSProject/assets/157314004/53de8845-d7e5-40e2-8fe9-f672613f75ca">
 
 2. This will run the debian container. To check if the debian container is running, type
@@ -371,6 +371,9 @@ Command :
 ```bash
 docker exec -i -t romantic_jackson /bin/bash
 ```
+Command : 
+<img width="556" alt="Screenshot 2024-01-30 220013" src="https://github.com/aedajihah/OSProject/assets/157314004/126440a9-91db-434e-ae0a-653cf531ebd8">
+
 
 4. Create a file on the container. First you must make sure you are in the bash command prompt of the container. The container is new, and does not have any software other than the debian OS. To create a new file, you will need an editor installed. In the bash shell of the container, run the package manager apt-get to install nano text editor. 
 
@@ -384,7 +387,18 @@ root@f65be1987f84:~# cd /root
 root@f65be1987f84:~# nano helloworld.txt
 ```
 
+Command : 
+<img width="556" alt="Screenshot 2024-01-30 220013" src="https://github.com/aedajihah/OSProject/assets/157314004/5c180814-22f2-4c5e-93fb-266d773ba4d3">
+<img width="500" alt="Screenshot 2024-01-30 220030" src="https://github.com/aedajihah/OSProject/assets/157314004/ccba756d-de41-4ef5-8857-e57c86e88ba3">
+<img width="505" alt="Screenshot 2024-01-30 220111" src="https://github.com/aedajihah/OSProject/assets/157314004/9081fe11-83d5-415c-99f3-ac89f9193945">
+<img width="572" alt="Screenshot 2024-01-30 220133" src="https://github.com/aedajihah/OSProject/assets/157314004/7a54236b-e3fa-4d04-8011-6e4911375f37">
+
+
 5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
+
+Command : 
+<img width="446" alt="Screenshot 2024-01-30 220146" src="https://github.com/aedajihah/OSProject/assets/157314004/4565fdb0-7316-4146-9d23-c1c32483bd1e">
+
 
 6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
 ```bash 
@@ -396,6 +410,13 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker restart romantic_jackson
 ```
+
+Command : 
+<img width="620" alt="Screenshot 2024-01-30 220213" src="https://github.com/aedajihah/OSProject/assets/157314004/542e19f0-8caa-49d3-a961-fb6a34268e53">
+
+Answer: YES, THE FILE IN THE CONTAINER STILL AVAILABLE 
+<img width="623" alt="Screenshot 2024-01-30 220341" src="https://github.com/aedajihah/OSProject/assets/157314004/71d4fb75-f2a5-401f-9ebb-9812ac1c8cb9">
+
 
 7. Stop the container and delete the container. What happened to your helloworld.txt?
 
@@ -409,10 +430,19 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 @joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
 ```
 
+Command : 
+<img width="645" alt="Screenshot 2024-01-30 220402" src="https://github.com/aedajihah/OSProject/assets/157314004/070ed5db-a9d4-41ea-84c3-b32497676361">
+
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+
+1. Are files in the container persistent. Why not?. 
+
+ANSWER: No, files in container are typically not persistent. The Container file systems are isolated from the host system. When a container is removed, any changes made to its file system are lost.
+
+2. Can we run two, or three instances of debian linux? .
+
+ANSWER: Yes, it is possible to run two or three instances of Debian Linux in different Containers. Every container has its own file system, processes, and operates independently. Based on the Debian image, many containers can be construct, each of which will run a separate instance of Debian Linux. Numerous instances of the containers can be run simultaneously because they won't interfere with one another.
 
 ## Running your own container with persistent storage
 
