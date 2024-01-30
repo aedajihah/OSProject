@@ -319,14 +319,33 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5061.2 avail Mem
 
 10. Run the command **uname -a**. ***(1 mark)*** Linux codespaces-549c6c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 11. What is the available free memory in the system. ***(1 mark)*** **213Mi**
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+12. What is the available disk space mounted on /workspace. ***(1 mark)***
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          32G   14G   17G  44% /
+tmpfs            64M     0   64M   0% /dev
+shm              64M     0   64M   0% /dev/shm
+/dev/root        29G   22G  7.0G  76% /vscode
+/dev/sdb1        44G  344K   42G   1% /tmp
+/dev/loop3       32G   14G   17G  44% /workspaces
 
-## Running your own container instance.
+Answer: 17G
+
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.6 LTS
+Release:        20.04
+Codename:       focal
+Hardware Architecture: x86_64
+
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+ls provides a list of files and directories in the current directory without giving any additional details while ls -asl command lists all entries, including hidden files and directories. The command also displays the size of each files/ directory in blocks, and give additional details like permissions, number of links, owner, group, size, modification time, and the name of each file or directory.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***  **TLB size: 2560 4K pages**
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __CPU MHz:  2714.959__
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+
+ 19820 codespa+  20   0   21.1g 326740  44416 S   2.3   4.0   0:22.33 node 
+
+## Running your own container instance
 
 1. At the terminal, run a linux instance. By typing the following command. 
 ```
