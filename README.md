@@ -352,12 +352,20 @@ ls provides a list of files and directories in the current directory without giv
 docker pull debian
 docker run --detach -it debian
 ```
+
+Terminal command: 
+<img width="531" alt="Screenshot 2024-01-30 215917" src="https://github.com/aedajihah/OSProject/assets/157314004/53de8845-d7e5-40e2-8fe9-f672613f75ca">
+
 2. This will run the debian container. To check if the debian container is running, type
 ```bash
 @joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
 f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             romantic_jackson
 ```
+
+Command : 
+<img width="555" alt="Screenshot 2024-01-30 215938" src="https://github.com/aedajihah/OSProject/assets/157314004/47e52b27-13d2-4987-a2c4-d0697f101bb6">
+
 
 3. Keep note of the name used by your container, this is usually given random names unless you specify your own name. Now run a bash command on the container. Make sure you use the name of your container instead of the one shown here. 
 ```bash
