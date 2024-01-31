@@ -25,7 +25,7 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** **aedajihah/OSProject**
-2. How many files and folders are in this repository. ***(1 mark)*** **One**
+2. How many files and folders are in this repository. ***(1 mark)*** **Three. If all the questions are done, then four.**
 
 
 ## Exploring github codespaces
@@ -78,7 +78,9 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 1. Run the command **pwd** . ***(1 mark)*** **/workspaces/OSProject**.
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
-root:x:0:0:root:/root:/bin/bash
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ cat /etc/passwd
+:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
@@ -103,8 +105,11 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
 
 3. Run the command **df** . ***(1 mark)***
+```bash 
+aedajihah ➜ /workspaces/OSProject (main) $ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 13637864  17515720  44% /
 tmpfs              65536        0     65536   0% /dev
@@ -112,8 +117,10 @@ shm                65536        8     65528   1% /dev/shm
 /dev/root       30298176 23009384   7272408  76% /vscode
 /dev/loop3      32847680 13637864  17515720  44% /workspaces
 /dev/sda1       46127956      724  43751656   1% /tmp
-
+```
 4. Run the command **du** . ***(1 mark)*** 
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ du
 64      ./.git/hooks
 4       ./.git/branches
 8       ./.git/info
@@ -203,19 +210,36 @@ shm                65536        8     65528   1% /dev/shm
 2640    ./.git
 1972    ./images
 4632    .
-5. Run the command **ls** . ***(1 mark)*** **README.md  images**
+```
+
+5. Run the command **ls** . ***(1 mark)*** 
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ ls
+README.md  images
+```
+
 6. Run the command **ls -asl** . ***(1 mark)*** 
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ ls -asl
 total 32
  4 drwxrwxrwx+ 4 codespace root  4096 Jan 26 05:15 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jan 26 05:15 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jan 26 05:40 .git
 16 -rw-rw-rw-  1 codespace root 15474 Jan 26 06:04 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jan 26 05:15 images
+ ```
+
 7. Run the command **free -h** . ***(1 mark)*** 
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ free -h
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       2.5Gi       213Mi       1.0Mi       5.1Gi       5.0Gi
 Swap:            0B          0B          0B
+```
+
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -271,7 +295,11 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
+```
+
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ top
 top - 06:10:32 up 59 min,  0 users,  load average: 0.89, 0.46, 0.29
 Tasks:  37 total,   1 running,  35 sleeping,   1 stopped,   0 zombie
 %Cpu(s):  2.9 us,  6.4 sy,  0.0 ni, 90.5 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
@@ -316,10 +344,19 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5061.2 avail Mem
   22325 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                                                                                                                 
   23997 codespa+  20   0    7384   1792   1792 T   0.0   0.0   0:00.00 cat                                                                                                                                                
   31529 codespa+  20   0   10992   3840   3200 R   0.0   0.0   0:00.04 top                                                                                                                                                
+```
 
-10. Run the command **uname -a**. ***(1 mark)*** Linux codespaces-549c6c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+10. Run the command **uname -a**. ***(1 mark)*** 
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ uname -a
+Linux codespaces-549c6c 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+```
+
 11. What is the available free memory in the system. ***(1 mark)*** **213Mi**
+
 12. What is the available disk space mounted on /workspace. ***(1 mark)***
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 overlay          32G   14G   17G  44% /
 tmpfs            64M     0   64M   0% /dev
@@ -327,7 +364,7 @@ shm              64M     0   64M   0% /dev/shm
 /dev/root        29G   22G  7.0G  76% /vscode
 /dev/sdb1        44G  344K   42G   1% /tmp
 /dev/loop3       32G   14G   17G  44% /workspaces
-
+```
 Answer: 17G
 
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
@@ -338,13 +375,15 @@ Codename:       focal
 Hardware Architecture: x86_64
 
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-ls provides a list of files and directories in the current directory without giving any additional details while ls -asl command lists all entries, including hidden files and directories. The command also displays the size of each files/ directory in blocks, and give additional details like permissions, number of links, owner, group, size, modification time, and the name of each file or directory.
+
+**ls provides a list of files and directories in the current directory without giving any additional details while ls -asl command lists all entries, including hidden files and directories. The command also displays the size of each files/ directory in blocks, and give additional details like permissions, number of links, owner, group, size, modification time, and the name of each file or directory.**
 15. What is the TLB size of the Virtual CPU. ***(1 mark)***  **TLB size: 2560 4K pages**
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __CPU MHz:  2714.959__
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
-
+```bash
+aedajihah ➜ /workspaces/OSProject (main) $ top
  19820 codespa+  20   0   21.1g 326740  44416 S   2.3   4.0   0:22.33 node 
-
+```
 ## Running your own container instance
 
 1. At the terminal, run a linux instance. By typing the following command. 
