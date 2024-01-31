@@ -516,7 +516,15 @@ The file helloNice.txt is owned by the root user and belongs to the root group w
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+ANSWER: YES, we can change the permission of the files to user codespace.
+
+Command: 
+
+<img width="431" alt="Screenshot 2024-01-31 114451" src="https://github.com/aedajihah/OSProject/assets/157314004/eb5784e1-4573-45a4-9d6e-5307d9b704a3">
+
+<img width="389" alt="Screenshot 2024-01-31 114551" src="https://github.com/aedajihah/OSProject/assets/157314004/f925111d-63cf-4248-b131-5df42d86ab16">
+
+
 
 ## You are on your own, create your own static webpage
 
