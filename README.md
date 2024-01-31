@@ -458,10 +458,32 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 @joeynor ➜ /workspaces/OSProject/myroot (main) $ docker run --detach -it -v /workspaces/OSProject/myroot:/root debian
 ```
+Command:
+<img width="587" alt="Screenshot 2024-01-31 110137" src="https://github.com/aedajihah/OSProject/assets/157314004/fc5c874b-4b7a-4a9b-8108-05e18514ca85">
+<img width="580" alt="Screenshot 2024-01-31 110147" src="https://github.com/aedajihah/OSProject/assets/157314004/12b5eb59-9756-4d64-98b8-725a544fa606">
+
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine?. 
+
+Command: 
+<img width="416" alt="Screenshot 2024-01-31 110637" src="https://github.com/aedajihah/OSProject/assets/157314004/83ff7c0e-36f9-4932-b605-cb75c771abf1">
+
+The output -rw-rw-rw- 1 root root 21 Jan 31 03:05 /root/helloNice.txt can be broken down as follows:
+-rw-rw-rw-: These are the permissions for the file. In this case, it indicates that the file is readable and writable for all users (owner, group, and others).
+
+1: This indicates the number of hard links to the file.
+root: The first occurrence of root indicates the user who owns the file. In this case, it's owned by the root user.
+root: The second occurrence of root indicates the group to which the file belongs. In this case, it's assigned to the root group.
+21: This represents the file size in bytes.
+Jan 31 03:05: This indicates the date and time when the file was last modified.
+/root/helloNice.txt: This is the path to the file.
+Therefore, based on the provided information:
+User: root
+Group: root
+The file helloNice.txt is owned by the root user and belongs to the root group within the Docker container.
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
