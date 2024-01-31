@@ -471,17 +471,27 @@ Command:
 <img width="416" alt="Screenshot 2024-01-31 110637" src="https://github.com/aedajihah/OSProject/assets/157314004/83ff7c0e-36f9-4932-b605-cb75c771abf1">
 
 The output -rw-rw-rw- 1 root root 21 Jan 31 03:05 /root/helloNice.txt can be broken down as follows:
+
 -rw-rw-rw-: These are the permissions for the file. In this case, it indicates that the file is readable and writable for all users (owner, group, and others).
 
 1: This indicates the number of hard links to the file.
+
 root: The first occurrence of root indicates the user who owns the file. In this case, it's owned by the root user.
+
 root: The second occurrence of root indicates the group to which the file belongs. In this case, it's assigned to the root group.
+
 21: This represents the file size in bytes.
+
 Jan 31 03:05: This indicates the date and time when the file was last modified.
+
 /root/helloNice.txt: This is the path to the file.
+
 Therefore, based on the provided information:
+
 User: root
+
 Group: root
+
 The file helloNice.txt is owned by the root user and belongs to the root group within the Docker container.
 
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
