@@ -354,6 +354,7 @@ docker run --detach -it debian
 ```
 
 Command: 
+
 <img width="531" alt="Screenshot 2024-01-30 215917" src="https://github.com/aedajihah/OSProject/assets/157314004/53de8845-d7e5-40e2-8fe9-f672613f75ca">
 
 2. This will run the debian container. To check if the debian container is running, type
@@ -364,6 +365,7 @@ f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             roma
 ```
 
 Command : 
+
 <img width="555" alt="Screenshot 2024-01-30 215938" src="https://github.com/aedajihah/OSProject/assets/157314004/47e52b27-13d2-4987-a2c4-d0697f101bb6">
 
 
@@ -372,6 +374,7 @@ Command :
 docker exec -i -t romantic_jackson /bin/bash
 ```
 Command : 
+
 <img width="556" alt="Screenshot 2024-01-30 220013" src="https://github.com/aedajihah/OSProject/assets/157314004/126440a9-91db-434e-ae0a-653cf531ebd8">
 
 
@@ -388,15 +391,20 @@ root@f65be1987f84:~# nano helloworld.txt
 ```
 
 Command : 
+
 <img width="556" alt="Screenshot 2024-01-30 220013" src="https://github.com/aedajihah/OSProject/assets/157314004/5c180814-22f2-4c5e-93fb-266d773ba4d3">
+
 <img width="500" alt="Screenshot 2024-01-30 220030" src="https://github.com/aedajihah/OSProject/assets/157314004/ccba756d-de41-4ef5-8857-e57c86e88ba3">
+
 <img width="505" alt="Screenshot 2024-01-30 220111" src="https://github.com/aedajihah/OSProject/assets/157314004/9081fe11-83d5-415c-99f3-ac89f9193945">
+
 <img width="572" alt="Screenshot 2024-01-30 220133" src="https://github.com/aedajihah/OSProject/assets/157314004/7a54236b-e3fa-4d04-8011-6e4911375f37">
 
 
 5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
 
 Command : 
+
 <img width="446" alt="Screenshot 2024-01-30 220146" src="https://github.com/aedajihah/OSProject/assets/157314004/4565fdb0-7316-4146-9d23-c1c32483bd1e">
 
 
@@ -412,9 +420,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ```
 
 Command : 
+
 <img width="620" alt="Screenshot 2024-01-30 220213" src="https://github.com/aedajihah/OSProject/assets/157314004/542e19f0-8caa-49d3-a961-fb6a34268e53">
 
 Answer: YES, THE FILE IN THE CONTAINER STILL AVAILABLE 
+
 <img width="623" alt="Screenshot 2024-01-30 220341" src="https://github.com/aedajihah/OSProject/assets/157314004/71d4fb75-f2a5-401f-9ebb-9812ac1c8cb9">
 
 
@@ -431,7 +441,10 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ```
 
 Command : 
+
 <img width="645" alt="Screenshot 2024-01-30 220402" src="https://github.com/aedajihah/OSProject/assets/157314004/070ed5db-a9d4-41ea-84c3-b32497676361">
+
+ANSWER: The modifications done inside the container including the generation of helloworld.txt will be erased once the container being stop and deleted.
 
 ***Questions:***
 
@@ -459,7 +472,9 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 @joeynor ➜ /workspaces/OSProject/myroot (main) $ docker run --detach -it -v /workspaces/OSProject/myroot:/root debian
 ```
 Command:
+
 <img width="587" alt="Screenshot 2024-01-31 110137" src="https://github.com/aedajihah/OSProject/assets/157314004/fc5c874b-4b7a-4a9b-8108-05e18514ca85">
+
 <img width="580" alt="Screenshot 2024-01-31 110147" src="https://github.com/aedajihah/OSProject/assets/157314004/12b5eb59-9756-4d64-98b8-725a544fa606">
 
 
@@ -468,6 +483,7 @@ Command:
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine?. 
 
 Command: 
+
 <img width="416" alt="Screenshot 2024-01-31 110637" src="https://github.com/aedajihah/OSProject/assets/157314004/83ff7c0e-36f9-4932-b605-cb75c771abf1">
 
 The output -rw-rw-rw- 1 root root 21 Jan 31 03:05 /root/helloNice.txt can be broken down as follows:
